@@ -1,6 +1,13 @@
-theme: jekyll-theme-minimal
-title: Oscar Callejas's Homepage
+theme: jekyll-theme-minimal 
+title: Oscar Callejas's Homepage 
 first_name: Oscar
 last_name: Callejas
-email: callejasoc@gmail.com
-description: Bookmark this to keep an eye on my project updates!
+email: callejasoc@gmail.com 
+description: Bookmark this to keep an eye on my project updates! 
+
+lang: en 
+url: "https://C58R.github.io" # the base hostname & protocol for your site 
+baseurl: "/website" # the subpath of your site, e.g. /blog
+
+
+
