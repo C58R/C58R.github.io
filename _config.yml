@@ -1,0 +1,9 @@
+theme: jekyll-theme-minimal
+title: Oscar Callejas Portfolio
+first_name: Oscar
+last_name: Callejas
+email: callejasoc1@gmail.com
+description: >
+  Welcome to my personal portfolio website where I showcase my projects and skills.
+url: "https://C58R.github.io" # the base hostname & protocol for your site
+baseurl: "/repos/" # the subpath of your site, e.g. /blog
