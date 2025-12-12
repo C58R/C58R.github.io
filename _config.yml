@@ -7,7 +7,7 @@ description: Bookmark this to keep an eye on my project updates!
 
 lang: en 
 url: "https://C58R.github.io" # the base hostname & protocol for your site 
-baseurl: "/website" # the subpath of your site, e.g. /blog
+baseurl: "/repos" # the subpath of your site, e.g. /blog
 
 
 
