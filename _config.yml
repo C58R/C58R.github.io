@@ -7,3 +7,7 @@ description: Welcome to my personal portfolio website where I showcase my projec
 
 domain: C58R.github.io
 url: https://C58R.github.io # the base hostname & protocol for your site
+
+lang: en
+indlude:
+  - assets/css/style.css
