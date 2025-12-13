@@ -12,7 +12,6 @@ gem "github-pages", "~> 232", group: :jekyll_plugins
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minima", "~> 2.5"
-gem "cayman", "~> 0.6.0"
   # Supported layouts: default, home, about, 404, articles, framework, tags, archives, categories
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
