@@ -168,6 +168,10 @@ GEM
       jekyll (>= 3.8, < 5.0)
     jekyll-sitemap (1.4.0)
       jekyll (>= 3.7, < 5.0)
+    jekyll-spaceship (0.5.3)
+      jekyll (>= 3.6, < 5.0)
+      nokogiri (~> 1.6)
+      rainbow (~> 3.0)
     jekyll-swiss (1.0.0)
     jekyll-theme-architect (0.2.0)
       jekyll (> 3.5, < 5.0)
@@ -209,6 +213,13 @@ GEM
     jekyll-theme-time-machine (0.2.0)
       jekyll (> 3.5, < 5.0)
       jekyll-seo-tag (~> 2.0)
+    jekyll-theme-yat (1.10.0)
+      jekyll (> 3.5, < 5.0)
+      jekyll-feed (~> 0.9)
+      jekyll-paginate (~> 1.1)
+      jekyll-seo-tag (~> 2.1)
+      jekyll-sitemap (~> 1.3)
+      jekyll-spaceship (~> 0.2)
     jekyll-titles-from-headings (0.5.3)
       jekyll (>= 3.3, < 5.0)
     jekyll-watch (2.2.1)
@@ -246,6 +257,7 @@ GEM
       forwardable-extended (~> 2.6)
     public_suffix (5.1.1)
     racc (1.8.1)
+    rainbow (3.1.1)
     rb-fsevent (0.11.2)
     rb-inotify (0.11.1)
       ffi (~> 1.0)
@@ -282,6 +294,7 @@ DEPENDENCIES
   github-pages (~> 232)
   http_parser.rb (~> 0.6.0)
   jekyll-feed (~> 0.12)
+  jekyll-theme-yat
   minima (~> 2.5)
   tzinfo (>= 1, < 3)
   tzinfo-data
@@ -336,6 +349,7 @@ CHECKSUMS
   jekyll-sass-converter (1.5.2) sha256=53773669e414dc3bb070113befacb808576025a28cfa4a4accc682e90a9c1101
   jekyll-seo-tag (2.8.0) sha256=3f2ed1916d56f14ebfa38e24acde9b7c946df70cb183af2cb5f0598f21ae6818
   jekyll-sitemap (1.4.0) sha256=0de08c5debc185ea5a8f980e1025c7cd3f8e0c35c8b6ef592f15c46235cf4218
+  jekyll-spaceship (0.5.3) sha256=0f7b20a3b55b14c89937cdc2cf72d50094f200dc8c2b9b1a37186518d783c18d
   jekyll-swiss (1.0.0) sha256=c299a855dca881fe868f21545c5489be50ddfbc0d54a80e8dbeb5a2ddc4888a3
   jekyll-theme-architect (0.2.0) sha256=7275d3dcaa6b34fcf92f2fe5cee92d49d66706d3b523003b1e67e9c668ff0440
   jekyll-theme-cayman (0.2.0) sha256=3c5f14f9c72a8eb03ecc74f9a3e5ecbbc55f9381339978b42dec216921865f2a
@@ -350,6 +364,7 @@ CHECKSUMS
   jekyll-theme-slate (0.2.0) sha256=5e40909de712bbbefbc7a29f17c55bffa326c222f0a13ee1656229a7d43c3439
   jekyll-theme-tactile (0.2.0) sha256=b7861b48aed5b2385d7a146b13f31cb6f37afe3107f4a6b93b1c932b2d242652
   jekyll-theme-time-machine (0.2.0) sha256=bc3490a7eccfc24ca671780c9d4f531500936a361690020b19defe6105d74fe2
+  jekyll-theme-yat (1.10.0) sha256=1ee9ac2dc836afad6d7b6c2f8dea964fc678f16b116dafc2f5e39f61a3798d69
   jekyll-titles-from-headings (0.5.3) sha256=77366754e361ea7b5d87881f5b1380835f5ce910c240a4d9ac2d7afe86d28481
   jekyll-watch (2.2.1) sha256=bc44ed43f5e0a552836245a54dbff3ea7421ecc2856707e8a1ee203a8387a7e1
   jemoji (0.13.0) sha256=5d4c3e8e2cbbb2b73997c31294f6f70c94e4d4fade039373e86835bcf5529e7c
@@ -369,6 +384,7 @@ CHECKSUMS
   pathutil (0.16.2) sha256=e43b74365631cab4f6d5e4228f812927efc9cb2c71e62976edcb252ee948d589
   public_suffix (5.1.1) sha256=250ec74630d735194c797491c85e3c6a141d7b5d9bd0b66a3fa6268cf67066ed
   racc (1.8.1) sha256=4a7f6929691dbec8b5209a0b373bc2614882b55fc5d2e447a21aaa691303d62f
+  rainbow (3.1.1) sha256=039491aa3a89f42efa1d6dec2fc4e62ede96eb6acd95e52f1ad581182b79bc6a
   rb-fsevent (0.11.2) sha256=43900b972e7301d6570f64b850a5aa67833ee7d87b458ee92805d56b7318aefe
   rb-inotify (0.11.1) sha256=a0a700441239b0ff18eb65e3866236cd78613d6b9f78fea1f9ac47a85e47be6e
   rexml (3.4.4) sha256=19e0a2c3425dfbf2d4fc1189747bdb2f849b6c5e74180401b15734bc97b5d142
