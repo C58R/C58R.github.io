@@ -6,7 +6,7 @@ This site is used to share information about me, my projects, and to experiment 
 ---
 
 ## Live Site
-[https://C58R.github.io]
+https://C58R.github.io
 
 ---
 
