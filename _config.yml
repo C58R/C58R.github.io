@@ -1,4 +1,7 @@
-theme: jekyll-theme-yat
+remote-theme: jeffreytse/jekyll-theme-yat
+plugins: 
+  - jekyll-remote-theme
+
 title: Portfolio
 first_name: Oscar
 last_name: Callejas
