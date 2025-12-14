@@ -9,7 +9,7 @@ domain: C58R.github.io
 url: https://C58R.github.io # the base hostname & protocol for your site
 
 lang: en
-indlude:
+include:
   - assets/css/style.css
 
 sass:
