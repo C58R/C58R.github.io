@@ -1,0 +1,63 @@
+/* Fade In Animation */
+.fade-in {
+  animation: fadeIn 0.8s ease-in forwards;
+}
+
+/* Keyframes for Fade In */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Boot Screen Styles */
+#boot-screen {
+  position: fixed;
+  inset: 0;
+  background: black;
+  color: #00ff9c;
+  font-family: "Courier New", monospace;
+  z-index: 9999;
+  display: block;
+  padding: 2rem;
+  text-align: left;
+}
+
+/* Boot-Up Text */
+.boot-text {
+  white-space: pre;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  color: #00ff9c;
+  animation: flicker 1.5s linear infinite;
+}
+
+/* Blinking Cursor */
+.boot-text::after {
+  content: "▌";
+  animation: blink 1s steps(1) infinite;
+}
+
+/* Flicker Effect */
+@keyframes flicker {
+  0% { opacity: 1; transform: translateX(0); }
+  50% { opacity: 0.85; transform: translateX(1px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+/* Blinking Cursor Animation */
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+/* Scanline Animation */
+@keyframes scanline {
+  0% { background-position: 0 0; }
+  100% { background-position: 0 100%; }
+}
