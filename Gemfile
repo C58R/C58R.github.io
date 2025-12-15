@@ -14,6 +14,9 @@ gem "github-pages", "~> 232", group: :jekyll_plugins
 gem "minima", "~> 2.5"
   # Supported layouts: default, home, about, 404, articles, framework, tags, archives, categories
 
+# Puma web server for better video/media support
+gem "puma", "~> 6.0"
+
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 # gem "github-pages", group: :jekyll_plugins
