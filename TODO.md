@@ -1,8 +1,12 @@
 # Task
-    - Add videos to assets/css/video and name them video1, video2, video3
-        - If you add more videos, ensure they're added to _layouts/default.html
-    
-    - After videos, keep tweaking the main pages.
+~~- Edit the background image position~~
+~~- Include Photo tag of the background image~~
+- Find my personal favorite quotes & authors
+- Work on About me page
+    - Add quick summary
+    - A professional photo of myself
+    - Links to my socials
+    - Ask AI for tips on what else to add
 
 
 
@@ -47,3 +51,6 @@ history                      # Command history
 Ctrl+C                       # Stop running process
 Ctrl+L                       # Clear screen (alternative)
 
+# For My Reference
+- Quotes/Authers are located in hero.js
+- To edit hero-background, go to hero-section.html

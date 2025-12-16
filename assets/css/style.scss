@@ -1,4 +1,180 @@
 ---
 ---
 
-@import "modernist";
+@import "hero";
+
+/* Modernist Color Palette */
+$color-bg: #fafafa;
+$color-text: #1a1a1a;
+$color-accent: #5a67d8;
+$color-light: #f0f0f0;
+$color-border: #d4d4d4;
+
+/* Global Modernist Styles */
+html {
+  height: 100%;
+}
+
+body {
+  background-color: $color-bg;
+  color: $color-text;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: $color-text;
+  letter-spacing: -0.5px;
+}
+
+a {
+  color: $color-accent;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: darken($color-accent, 10%);
+  }
+}
+
+/* Header Styles */
+/* Header above hero */
+.page-header {
+  background-color: transparent;
+  border-bottom: 1px solid transparent;
+  padding: 1rem 0rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 200;
+  box-shadow: none;
+  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+  color: white;
+text-shadow: 
+    0 1px 3px rgba(0, 0, 0, 0.5),
+    0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Header solid when scrolled past hero */
+.page-header.scrolled {
+  background-color: $color-bg;
+  border-bottom: 1px solid $color-border;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  color: $color-text;
+  text-shadow: none;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  padding: 0 2.5rem;
+  margin: 0 auto;
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: inherit;
+  letter-spacing: -0.5px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 2rem;
+
+  a {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: inherit;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $color-accent;
+    }
+  }
+}
+
+/* Scrolled state text colors */
+.page-header.scrolled {
+  .name,
+  .nav-menu a {
+    color: $color-text;
+  }
+}
+
+/* Main Content */
+.main-content {
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 3rem 2rem ;
+  background-color: $color-bg;
+  position: relative;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+
+  h1, h2, h3 {
+    color: $color-text;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  p {
+    margin-bottom: 1.5rem;
+    color: lighten($color-text, 20%);
+  }
+}
+
+/* Footer */
+.site-footer {
+  background-color: $color-light;
+  border-top: 1px solid $color-border;
+  padding: 2rem;
+  text-align: center;
+  color: lighten($color-text, 30%);
+  font-size: 0.9rem;
+
+  p {
+    margin: 0.5rem 0;
+  }
+
+  a {
+    color: $color-accent;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-menu {
+    gap: 1rem;
+  }
+
+  .main-content {
+    padding: 2rem 1.5rem;
+  }
+
+  .name {
+    font-size: 1.25rem;
+  }
+}
