@@ -108,37 +108,23 @@
   }
 }
 
-/* Responsive text scaling for various devices */
-@media (max-width: 1200px) {
+
+@media (max-width: 360px) {
   .hero-title {
-    font-size: 4rem;
+    font-size: 1rem;
   }
   .hero-quote {
-    font-size: 1.3rem;
+    font-size: 0.85rem;
+    margin-top: 0.8rem;
   }
   .hero-quote-author {
-    font-size: 1.1rem;
+    font-size: 0.75rem;
+  }
+  .hero-caption {
+    font-size: 0.7rem;
   }
 }
 
-@media (max-width: 768px) {
-  .hero-title {
-    font-size: 3rem;
-  }
-  .hero-quote {
-    font-size: 1.1rem;
-  }
-  .hero-quote-author {
-    font-size: 1rem;
-  }
-  .hero-caption {
-    font-size: 0.9rem;
-  }
-  .hero-caption-section {
-    bottom: 1.5rem;
-    right: 1.5rem;
-  }
-}
 
 @media (max-width: 480px) {
   .hero-title {
@@ -154,31 +140,49 @@
   .hero-caption {
     font-size: 0.8rem;
   }
-  .hero-caption-section {
-    bottom: 1rem;
-    right: 1rem;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  .hero-quote {
+    font-size: 1.1rem;
+  }
+  .hero-quote-author {
+    font-size: 1rem;
+  }
+  .hero-caption {
+    font-size: 0.9rem;
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 992px) {
   .hero-title {
-    font-size: 1.5rem;
+    font-size: 3.5rem;
   }
   .hero-quote {
-    font-size: 0.85rem;
-    margin-top: 0.8rem;
+    font-size: 1.2rem;
   }
   .hero-quote-author {
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
   .hero-caption {
-    font-size: 0.7rem;
+    font-size: 0.95rem;
   }
-  .hero-caption-section {
-    bottom: 0.8rem;
-    right: 0.8rem;
+}
+
+@media (max-width: 1200px) {
+  .hero-title {
+    font-size: 4rem;
   }
-  .hero-content {
-    padding: 1rem;
+  .hero-quote {
+    font-size: 1.3rem;
+  }
+  .hero-quote-author {
+    font-size: 1.1rem;
+  }
+  .hero-caption {
+    font-size: 1rem;
   }
 }
