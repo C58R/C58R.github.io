@@ -8,8 +8,8 @@
     - Links to my socials
     - Ask AI for tips on what else to add
 ~~- Create a favicon.ico (on Canvas?)~~
-- Darken the tab name in the header nav-bar when user is on the same page
-- Text on Hero section looks too small on mobile devices
+~~- Darken the tab name in the header nav-bar when user is on the same page~~
+~~- Text on Hero section looks too small on mobile devices~~
 
 
 

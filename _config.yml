@@ -31,3 +31,5 @@ exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
+  - TODO.md
+  - setting.json
