@@ -91,6 +91,11 @@ a {
     color: inherit;
     transition: $transition-base;
 
+    &.active {
+      color: $color-accent;
+      font-weight: 700;
+    }
+
     &:hover {
       color: $color-accent;
     }
@@ -147,6 +152,7 @@ a {
   }
 }
 
+/* Screen Sizes */
 @media (max-width: 1200px) {
   .nav-menu {
     gap: 1.5rem;

@@ -26,6 +26,7 @@
   </head>
   <body>
     <!-- Header -->
+    {% assign current = page.url %}
     <header class="page-header{% unless page.url == '/' %} scrolled{% endunless %}" role="banner">
       <div class="header-content">
         <a class="name" href="{{ '/' | relative_url }}">Oscar Callejas</a>
@@ -35,9 +36,9 @@
           <span class="bar"></span>
         </button>
         <nav class="nav-menu" id="navMenu" role="navigation" aria-label="Primary">
-          <a href="{{ '/' | relative_url }}">Home</a>
-          <a href="{{ '/about' | relative_url }}">About</a>
-          <a href="{{ '/posts' | relative_url }}">Posts</a>
+          <a href="{{ '/' | relative_url }}" class="{% if current == '/' or current == '/index.html' %}active{% endif %}">Home</a>
+          <a href="{{ '/about' | relative_url }}" class="{% if current contains '/about' %}active{% endif %}">About</a>
+          <a href="{{ '/posts' | relative_url }}" class="{% if current contains '/posts' %}active{% endif %}">Posts</a>
         </nav>
       </div>
     </header>

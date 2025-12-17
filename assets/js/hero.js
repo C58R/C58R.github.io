@@ -74,9 +74,34 @@ document.addEventListener('DOMContentLoaded', function() {
     fetch(CONFIG.scroll.quotesPath)
       .then(response => response.json())
       .then(quotes => {
-        const randomIndex = Math.floor(Math.random() * quotes.length);
+        if (!Array.isArray(quotes) || quotes.length === 0) return;
+
+        // Avoid showing the same quote twice in a row
+        let lastIndex = -1;
+        try {
+          const stored = sessionStorage.getItem('lastQuoteIndex');
+          if (stored !== null) lastIndex = parseInt(stored, 10);
+        } catch (_) {
+          // sessionStorage may be blocked; ignore and proceed
+        }
+
+        let randomIndex = 0;
+        if (quotes.length === 1) {
+          randomIndex = 0;
+        } else {
+          do {
+            randomIndex = Math.floor(Math.random() * quotes.length);
+          } while (randomIndex === lastIndex);
+        }
+
         quoteElement.textContent = '"' + quotes[randomIndex].text + '"';
         authorElement.textContent = '— ' + quotes[randomIndex].author;
+
+        try {
+          sessionStorage.setItem('lastQuoteIndex', String(randomIndex));
+        } catch (_) {
+          // Ignore if storage is unavailable
+        }
       })
       .catch(error => console.warn('Could not load quotes:', error));
   }
