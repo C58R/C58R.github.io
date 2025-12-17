@@ -1,4 +1,7 @@
 /* Hero section styles */
+@import "variables";
+@import "breakpoints";
+
 .hero-section {
   position: relative;
   height: 100vh;
@@ -56,25 +59,22 @@
 .hero-quote {
   font-size: 1.5rem;
   margin-top: 2rem;
+  padding: 0 2rem;
   font-style: italic;
-  text-shadow: 
-    0 2px 4px rgba(0, 0, 0, 0.5),
-    0 4px 8px rgba(0, 0, 0, 0.4);
+  text-shadow: $shadow-text-strong;
   animation: fadeInUp 2s ease-out;
 }
 
 .hero-quote-author {
   font-size: 1.2rem;
   margin-top: 0.5rem;
+  padding: 0 2rem;
   font-style: normal;
   font-weight: 300;
   opacity: 0.9;
-  text-shadow: 
-    0 2px 4px rgba(0, 0, 0, 0.5),
-    0 4px 8px rgba(0, 0, 0, 0.4);
+  text-shadow: $shadow-text-strong;
   animation: fadeInUp 2.3s ease-out;
 }
-
 
 /* Hero Image Caption */
 .hero-caption-section {
@@ -91,9 +91,7 @@
   margin: 0;
   font-weight: 400;
   opacity: 0.8;
-  text-shadow: 
-    0 1px 3px rgba(0, 0, 0, 0.5),
-    0 2px 6px rgba(0, 0, 0, 0.3);
+  text-shadow: $shadow-text;
   animation: fadeInUp 2.5s ease-out;
 }
 
@@ -108,7 +106,7 @@
   }
 }
 
-@media (max-width: 1200px) {
+@include xl-and-down {
   .hero-title {
     font-size: 4rem;
   }
@@ -123,7 +121,7 @@
   }
 }
 
-@media (max-width: 992px) {
+@include lg-and-down {
   .hero-title {
     font-size: 3.5rem;
   }
@@ -138,7 +136,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@include md-and-down {
   .hero-title {
     font-size: 3rem;
   }
@@ -153,35 +151,35 @@
   }
 }
 
-@media (max-width: 480px) {
+@include sm-and-down {
+  .hero-title {
+    font-size: 2.8rem;
+  }
+  .hero-quote {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+  }
+  .hero-quote-author {
+    font-size: 0.95rem;
+  }
+  .hero-caption {
+    font-size: 0.9rem;
+  }
+}
+
+@include xs-and-down {
   .hero-title {
     font-size: 2.5rem;
   }
   .hero-quote {
-    font-size: 0.95rem;
-    margin-top: 1rem;
-  }
-  .hero-quote-author {
-    font-size: 0.85rem;
-  }
-  .hero-caption {
-    font-size: 0.8rem;
-  }
-}
-
-@media (max-width: 360px) {
-  .hero-title {
-    font-size: 2rem;
-  }
-  .hero-quote {
-    font-size: 0.85rem;
+    font-size: 1rem;
     margin-top: 0.8rem;
   }
   .hero-quote-author {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
   }
   .hero-caption {
-    font-size: 0.7rem;
+    font-size: 0.85rem;
   }
 }
 

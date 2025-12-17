@@ -1,0 +1,43 @@
+/* Responsive breakpoint mixins */
+
+@mixin xl-and-down {
+  @media (max-width: $breakpoint-xl) {
+    @content;
+  }
+}
+
+@mixin lg-and-down {
+  @media (max-width: $breakpoint-lg) {
+    @content;
+  }
+}
+
+@mixin md-and-down {
+  @media (max-width: $breakpoint-md) {
+    @content;
+  }
+}
+
+@mixin sm-and-down {
+  @media (max-width: $breakpoint-sm) {
+    @content;
+  }
+}
+
+@mixin xs-and-down {
+  @media (max-width: $breakpoint-xs) {
+    @content;
+  }
+}
+
+@mixin xxs-and-down {
+  @media (max-width: $breakpoint-xxs) {
+    @content;
+  }
+}
+
+@mixin md-and-up {
+  @media (min-width: #{$breakpoint-md + 1px}) {
+    @content;
+  }
+}

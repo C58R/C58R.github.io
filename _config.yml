@@ -4,9 +4,16 @@ first_name: Oscar
 last_name: Callejas
 email: callejasoc1@gmail.com
 description: Welcome to my personal portfolio website where I showcase my projects and skills.
+author: Oscar Callejas
+github_username: C58R
+social: 
+  github: www.github.com/C58R
+  linkedin: www.linkedin.com/in/oscar-callejas-170761141
+  instagram: www.instagram.com/oscar_oc1
+  facebook: www.facebook.com/oscar.callejas.3150
 
 domain: C58R.github.io
-url: https://C58R.github.io # the base hostname & protocol for your site
+url: https://C58R.github.io
 
 lang: en
 include:
@@ -14,3 +21,13 @@ include:
 
 sass:
   sass_dir: assets/css
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+exclude:
+  - .gitignore
+  - README.md
+  - Gemfile
+  - Gemfile.lock

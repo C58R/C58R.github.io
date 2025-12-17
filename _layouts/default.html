@@ -13,35 +13,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- Site Stylesheet -->
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <!-- Suppress favicon.ico 404 without adding a file -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22/>">
-    <script defer src="{{ site.baseurl }}/assets/js/hero.js"></script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="{{ '/assets/images/favicon-96x96.png' | relative_url }}" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/favicon.svg' | relative_url }}" />
+    <link rel="shortcut icon" href="{{ '/assets/images/favicon.ico' | relative_url }}" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/images/apple-touch-icon.png' | relative_url }}" />
+    <link rel="manifest" href="{{ '/assets/images/site.webmanifest' | relative_url }}" />
+
+    <link rel="preload" as="image" href="{{ '/assets/images/taipei101.jpg' | relative_url }}" imagesrcset="{{ '/assets/images/taipei101.jpg' | relative_url}}" />
+    <script defer src="{{ '/assets/js/hero.js' | relative_url }}"></script>
   </head>
   <body>
     <!-- Header -->
-    <header class="page-header" role="banner">
+    <header class="page-header{% unless page.url == '/' %} scrolled{% endunless %}" role="banner">
       <div class="header-content">
-        <div class="name">Oscar Callejas</div>
-        <nav class="nav-menu">
-          <a href="/">Home</a>
-          <a href="/about">About</a>
-          <a href="/posts">Posts</a>
+        <a class="name" href="{{ '/' | relative_url }}">Oscar Callejas</a>
+        <button class="menu-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <nav class="nav-menu" id="navMenu" role="navigation" aria-label="Primary">
+          <a href="{{ '/' | relative_url }}">Home</a>
+          <a href="{{ '/about' | relative_url }}">About</a>
+          <a href="{{ '/posts' | relative_url }}">Posts</a>
         </nav>
       </div>
     </header>
     <!-- Hero Section (outside main content) -->
-    {% include hero-section.html %}
+    {% if page.url == '/' %}{% include hero-section.html %}{% endif %}
     <!-- Main Content -->
     <main id="content" class="main-content" role="main">
       {{ content }}
     </main>
-
     <!-- Footer -->
     <footer class="site-footer">
-      <p>&copy; 2025 Oscar Callejas. All rights reserved.</p>
-      {% if site.github.is_project_page %}
-        <p><a href="{{ site.github.repository_url }}">View on GitHub</a></p>
-      {% endif %}
+      <p>&copy; {{ 'now' | date: '%Y' }} Oscar Callejas. All rights reserved.</p>
     </footer>
   </body>
 </html>

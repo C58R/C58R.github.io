@@ -1,0 +1,43 @@
+/* Color Palette */
+$color-bg: #fafafa;
+$color-text: #1a1a1a;
+$color-accent: #5a67d8;
+$color-light: #f0f0f0;
+$color-border: #d4d4d4;
+$color-accent-hover: darken($color-accent, 10%);
+
+/* Typography */
+$font-family-base: 'Montserrat', sans-serif;
+$font-size-base: 16px;
+$line-height-base: 1.6;
+
+/* Spacing */
+$spacing-xs: 0.5rem;
+$spacing-sm: 1rem;
+$spacing-md: 1.5rem;
+$spacing-lg: 2rem;
+$spacing-xl: 2.5rem;
+
+/* Z-Index */
+$z-header: 200;
+$z-content: 50;
+$z-hero: 100;
+
+/* Transitions */
+$transition-base: color 0.3s ease;
+$transition-all: all 0.3s ease;
+$transition-short: 0.25s ease;
+$transition-medium: 0.3s ease;
+
+/* Shadows */
+$shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+$shadow-text: 0 1px 3px rgba(0, 0, 0, 0.5), 0 2px 6px rgba(0, 0, 0, 0.3);
+$shadow-text-strong: 0 2px 4px rgba(0, 0, 0, 0.5), 0 4px 8px rgba(0, 0, 0, 0.4);
+
+/* Breakpoints (in pixels) */
+$breakpoint-xl: 1200px;
+$breakpoint-lg: 992px;
+$breakpoint-md: 768px;
+$breakpoint-sm: 480px;
+$breakpoint-xs: 360px;
+$breakpoint-xxs: 320px;
