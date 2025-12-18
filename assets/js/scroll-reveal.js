@@ -6,10 +6,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const windowHeight = window.innerHeight;
     const revealPoint = 100;
 
-    revealElements.forEach(element => {
-      const elementTop = element.getBoundingClientRect().top;
+    // Batch DOM reads to reduce forced reflows
+    const elementPositions = Array.from(revealElements).map(element => ({
+      element,
+      top: element.getBoundingClientRect().top
+    }));
 
-      if (elementTop < windowHeight - revealPoint) {
+    // Then batch DOM writes
+    elementPositions.forEach(({ element, top }) => {
+      if (top < windowHeight - revealPoint) {
         element.classList.add('visible');
       }
     });

@@ -152,7 +152,26 @@ a {
   }
 }
 
-/* Home Page Sections */
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+
+  a {
+    color: $color-text;
+    font-size: 1.8rem;
+    transition: transform 0.2s ease, color 0.2s ease;
+    
+    &:hover {
+      transform: translateY(-3px);
+      color: $color-accent;
+    }
+  }
+}
+
+/* Home Page */
 .intro-section {
   max-width: 800px;
   margin: 0 auto 4rem;
@@ -171,6 +190,7 @@ a {
   }
 }
 
+/* Featured Projects */
 .featured-projects {
   max-width: 1200px;
   margin: 0 auto 4rem;
@@ -195,6 +215,7 @@ a {
   border-radius: 8px;
   padding: 2rem;
   transition: $transition-all;
+  position: relative;
 
   &:hover {
     transform: translateY(-4px);
@@ -209,6 +230,23 @@ a {
       width: 3rem;
       height: 3rem;
       display: block;
+    }
+  }
+
+  .learn-more {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 0.9rem;
+    
+    a {
+      color: $color-accent;
+      font-weight: 600;
+      transition: $transition-base;
+
+      &:hover {
+        color: $color-accent-hover;
+      }
     }
   }
 
@@ -247,7 +285,7 @@ a {
 }
 
 .skills-section {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto 4rem;
 
   h2 {
@@ -258,17 +296,28 @@ a {
   }
 }
 
+/* Tools and Technologies */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .skill-category {
   background: white;
   border: 1px solid $color-border;
   border-radius: 8px;
-  padding: 1.5rem;
+  padding: 2rem;
+
+  &:hover {
+    box-shadow: $shadow-sm;
+    transform: translateY(-2px);
+    transition: $transition-all;
+  }
 
   h3 {
     font-size: 1.25rem;
@@ -282,7 +331,8 @@ a {
     margin: 0;
 
     li {
-      padding: 0.5rem 0;
+      padding: 0.65rem 0;
+      font-size: 1rem;
       color: lighten($color-text, 15%);
       border-bottom: 1px solid lighten($color-border, 5%);
 
@@ -293,13 +343,18 @@ a {
   }
 }
 
+/* Call to Action */
 .cta-section {
   max-width: 800px;
   margin: 0 auto 4rem;
   text-align: center;
   padding: 3rem 2rem;
   background: linear-gradient(135deg, lighten($color-accent, 45%), lighten($color-accent, 40%));
+  border: 1px solid $color-border;
   border-radius: 12px;
+  transition: $transition-all;
+  box-shadow: $shadow-sm;
+  
 
   h2 {
     font-size: 2rem;
@@ -338,7 +393,7 @@ a {
   &:hover {
     background: $color-accent-hover;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba($color-accent, 0.3);
+    transition: $transition-all;
   }
 }
 
@@ -466,13 +521,13 @@ a {
 }
 
 .scroll-reveal.delay-1 {
-  transition-delay: 0.1s;
+  transition-delay: $scroll-reveal-delay-1;
 }
 
 .scroll-reveal.delay-2 {
-  transition-delay: 0.2s;
+  transition-delay: $scroll-reveal-delay-2;
 }
 
 .scroll-reveal.delay-3 {
-  transition-delay: 0.3s;
+  transition-delay: $scroll-reveal-delay-3;
 }

@@ -15,6 +15,9 @@ title: Oscar Callejas
       <div class="project-icon">
         <img src="/assets/images/arduino.svg" alt="Project icon" draggable="false">
       </div>
+      <div class="learn-more">
+        <a href="/projects#medibot" class="view-project">Learn More &rarr;</a>
+      </div>
       <h3>MediBot</h3>
       <p>Autonomous robot designed to deliver medical supplies and locate victims using PIR motion sensors. Built and simulated in TinkerCAD with Arduino-based circuits.</p>
       <div class="project-tech">
@@ -48,7 +51,6 @@ title: Oscar Callejas
     -->
   </div>
 </section>
-
 <section class="skills-section scroll-reveal">
   <h2>Skills & Technologies</h2>
   <div class="skills-grid">
@@ -65,10 +67,10 @@ title: Oscar Callejas
     <div class="skill-category">
       <h3>Frameworks</h3>
       <ul>
-        <li>React</li>
-        <li>Node.js</li>
         <li>Jekyll</li>
-        <li>Express</li>
+        <li>SCSS/Sass</li>
+        <li>Liquid</li>
+        <li>Markdown</li>
       </ul>
     </div>
     <div class="skill-category">
@@ -77,7 +79,7 @@ title: Oscar Callejas
         <li>Git & GitHub</li>
         <li>VS Code</li>
         <li>Arduino</li>
-        <li>Linux</li>
+        <li>TinkerCAD</li>
       </ul>
     </div>
   </div>
