@@ -531,3 +531,91 @@ a {
 .scroll-reveal.delay-3 {
   transition-delay: $scroll-reveal-delay-3;
 }
+
+/* About Page */
+.about-hero {
+  max-width: 900px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 2rem;
+  align-items: start;
+  max-width: 1000px;
+  margin: 0 auto 4rem;
+}
+
+.about-photo {
+  position: relative;
+}
+
+.profile-photo {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.08);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.06);
+  user-select: none;
+}
+
+.about-content h3 {
+  margin-top: 0;
+}
+
+.about-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+}
+
+.about-list li {
+  padding: 0.4rem 0;
+  border-bottom: 1px dashed rgba(0,0,0,0.06);
+}
+
+.photo-gallery {
+  max-width: 1000px;
+  margin: 0 auto 4rem;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.photo-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0.08);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.06);
+}
+
+.about-cta {
+  max-width: 900px;
+  margin: 0 auto 3rem;
+}
+
+.cta-card {
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.06);
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 767px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
