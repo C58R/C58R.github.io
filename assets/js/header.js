@@ -4,14 +4,21 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Scroll listener only on pages with hero
   if (header && hero) {
+    let ticking = false;
     window.addEventListener('scroll', function() {
-      const heroBottom = hero.offsetHeight;
-      const scrollPosition = window.scrollY;
-      
-      if (scrollPosition > heroBottom) {
-        header.classList.add('scrolled');
-      } else {
-        header.classList.remove('scrolled');
+      if (!ticking) {
+        window.requestAnimationFrame(function() {
+          const heroBottom = hero.offsetHeight;
+          const scrollPosition = window.scrollY;
+          
+          if (scrollPosition > heroBottom) {
+            header.classList.add('scrolled');
+          } else {
+            header.classList.remove('scrolled');
+          }
+          ticking = false;
+        });
+        ticking = true;
       }
     });
   }

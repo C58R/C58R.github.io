@@ -21,10 +21,15 @@ include:
 
 sass:
   sass_dir: assets/css
+  style: compressed
 
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+
+compress_html:
+  clippings: all
+  comments: all
 
 exclude:
   - .gitignore

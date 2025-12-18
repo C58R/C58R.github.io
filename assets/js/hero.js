@@ -1,7 +1,7 @@
 // ===== Configuration =====
 const CONFIG = {
   particles: {
-    count: 23,
+    count: 15,
     baseRadius: 3.5,
     initialOpacity: 0.4,
     animationMinDuration: 6,

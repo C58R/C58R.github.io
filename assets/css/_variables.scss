@@ -28,6 +28,7 @@ $transition-base: color 0.3s ease;
 $transition-all: all 0.3s ease;
 $transition-short: 0.25s ease;
 $transition-medium: 0.3s ease;
+$transition-hamburger-menu: opacity 0.2s ease-out, transform 0.2s ease-out, max-height 0.3s ease-out;
 
 /* Shadows */
 $shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);

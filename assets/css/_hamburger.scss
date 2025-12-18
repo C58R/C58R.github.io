@@ -80,7 +80,7 @@
     max-height: 0;
     overflow: hidden;
     pointer-events: none;
-    transition: opacity $transition-short, transform $transition-short, max-height $transition-medium;
+    transition: $transition-hamburger-menu;
   }
 
   .page-header:not(.scrolled) .nav-menu {

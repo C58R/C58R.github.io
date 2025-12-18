@@ -1,15 +1,15 @@
 # Task
 ~~- Edit the background image position~~
 ~~- Include Photo tag of the background image~~
+~~- Create a favicon.ico (on Canvas?)~~
+~~- Darken the tab name in the header nav-bar when user is on the same page~~
+~~- Text on Hero section looks too small on mobile devices~~
 - Find my personal favorite quotes & authors
 - Work on About me page
     - Add quick summary
     - A professional photo of myself
     - Links to my socials
     - Ask AI for tips on what else to add
-~~- Create a favicon.ico (on Canvas?)~~
-~~- Darken the tab name in the header nav-bar when user is on the same page~~
-~~- Text on Hero section looks too small on mobile devices~~
 
 
 

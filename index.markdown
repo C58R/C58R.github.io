@@ -3,60 +3,65 @@ layout: default
 title: Oscar Callejas
 ---
 
-<section class="intro-section">
-  <h2>About Me</h2>
-  <p>I'm a U.S. Marine veteran and computer science student pursuing a career in software engineering. I focus on problem-solving and building meaningful, reliable solutions that make a difference.</p>
-  <p>Currently based in Taipei, Taiwan, I'm passionate about learning new technologies and continuously improving my craft.</p>
+<section class="intro-section scroll-reveal">
+  <h2>What I do</h2>
+  <p>I'm a U.S. Marine veteran and computer science student pursuing a career in software engineering. I'm developing the skills to build software that makes a difference.</p>
 </section>
 
-<section class="featured-projects">
+<section class="featured-projects scroll-reveal">
   <h2>Featured Projects</h2>
   <div class="projects-grid">
     <div class="project-card">
-      <div class="project-icon">🚀</div>
-      <h3>Project Name</h3>
-      <p>Brief description of your project and what technologies you used to build it.</p>
+      <div class="project-icon">
+        <img src="/assets/images/arduino.svg" alt="Project icon" draggable="false">
+      </div>
+      <h3>MediBot</h3>
+      <p>Autonomous robot designed to deliver medical supplies and locate victims using PIR motion sensors. Built and simulated in TinkerCAD with Arduino-based circuits.</p>
       <div class="project-tech">
-        <span class="tech-tag">Python</span>
-        <span class="tech-tag">JavaScript</span>
+        <span class="tech-tag">C++</span>
+        <span class="tech-tag">Arduino</span>
+        <span class ="tech-tag">TinkerCAD</span>
       </div>
     </div>
-    
     <div class="project-card">
-      <div class="project-icon">💻</div>
-      <h3>Another Project</h3>
-      <p>Brief description of your second project and the problem it solves.</p>
+      <div class="project-icon">
+          <img src="/assets/images/construction.svg" alt="Project icon" draggable="false">
+      </div>
+      <h3>Projects In Progress</h3>
+      <p>Currently developing projects that demonstrate my skills and passion.</p>
       <div class="project-tech">
-        <span class="tech-tag">React</span>
-        <span class="tech-tag">Node.js</span>
+        <span class="tech-tag">N/A</span>
       </div>
     </div>
-    
+    <!-- === Next project-card === 
     <div class="project-card">
-      <div class="project-icon">🔧</div>
-      <h3>Third Project</h3>
-      <p>Brief description of your third project and what makes it unique.</p>
+      <div class="project-icon">
+        <img src="/assets/images/icon.svg" alt="Project icon" draggable="false">
+      </div>
+      <h3>Project Card 2</h3>
+      <p>Currently developing projects that demonstrate my skills and passion.</p>
       <div class="project-tech">
-        <span class="tech-tag">Jekyll</span>
-        <span class="tech-tag">SCSS</span>
+        <span class="tech-tag">Coding Language</span>
+        <span class="tech-tag">Coding Language2</span>
       </div>
     </div>
+    -->
   </div>
 </section>
 
-<section class="skills-section">
+<section class="skills-section scroll-reveal">
   <h2>Skills & Technologies</h2>
   <div class="skills-grid">
     <div class="skill-category">
       <h3>Languages</h3>
       <ul>
-        <li>Python</li>
+        <li>Java</li>
+        <li>C/C++ (Arduino)</li>
         <li>JavaScript</li>
         <li>HTML/CSS</li>
         <li>SQL</li>
       </ul>
     </div>
-    
     <div class="skill-category">
       <h3>Frameworks</h3>
       <ul>
@@ -66,20 +71,18 @@ title: Oscar Callejas
         <li>Express</li>
       </ul>
     </div>
-    
     <div class="skill-category">
       <h3>Tools</h3>
       <ul>
         <li>Git & GitHub</li>
         <li>VS Code</li>
-        <li>Docker</li>
+        <li>Arduino</li>
         <li>Linux</li>
       </ul>
     </div>
   </div>
 </section>
-
-<section class="cta-section">
+<section class="cta-section scroll-reveal">
   <h2>Let's Connect</h2>
   <p>Interested in working together or want to learn more?</p>
   <div class="cta-buttons">
