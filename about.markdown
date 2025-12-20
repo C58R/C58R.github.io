@@ -6,16 +6,7 @@ permalink: /about/
 <section class="about-hero scroll-reveal">
 	<h2 class="About-title scroll-reveal">About Me</h2>
 	<p class="scroll-reveal">
-		At 24, I was responsible for leading a team of fellow Marines while protecting U.S. diplomats, safeguarding classified materials, overseeing daily security operations, and coordinating with host nation officials to maintain safety and operational readiness. My assignments in Liberia, Taiwan, and the Czech Republic each introduced new teams, cultures, and challenges, consistently testing my leadership, logistical skills, and adaptability in high-stakes environments.
-	</p>
-	<p class="scroll-reveal">
-		I served as Assistant Detachment Commander and, during periods of leadership turnover, stepped in as Acting Detachment Commander. In this role, I led a detachment of six Marines—some older and some younger than me—without an immediate supervisor. That responsibility forced me to understand the broader picture of embassy security and decision-making. I worked closely with embassy personnel, represented the Marines in high-level meetings, and made decisions that directly impacted the safety of diplomats and classified materials. These experiences taught me that effective leadership is not rigid; it is built on trust, communication, and adaptability.
-	</p>
-	<p class="scroll-reveal">
-		Alongside my professional responsibilities, I immersed myself in the cultures of the countries where I served. In Liberia, I witnessed extreme underdevelopment alongside remarkable resilience and hospitality, which reshaped how I value perspective and gratitude. In Taiwan, I experienced a culture deeply rooted in tradition and community, where food serves as a powerful connector. In the Czech Republic, I encountered a slower, more intentional way of life that emphasized balance and community. Each assignment broadened my worldview and strengthened my sense of empathy and cultural awareness.
-	</p>
-	<p class="scroll-reveal">
-		These experiences continue to shape how I approach challenges today. The discipline, independence, and leadership I developed in the Marine Corps guide how I learn, collaborate, and problem-solve. I bring a global perspective, resilience, and curiosity into my work, and I strive to contribute thoughtfully to the teams and communities I am part of.
+		Marine Security Guard who led detachments protecting U.S. diplomats and classified materials across Liberia, Taiwan, and the Czech Republic. I lean on trust, communication, and adaptability to keep teams aligned in high-stakes environments. That same problem-solving mindset now drives my transition into software engineering.
 	</p>
 </section>
 <section class="about-grid scroll-reveal">
@@ -23,27 +14,40 @@ permalink: /about/
 		<img src="/assets/images/oscar.jpg" alt="Photo of Oscar Callejas" class="profile-photo" draggable="false">
 	</div>
 	<div class="about-content">
+		<h3>What I bring</h3>
 		<p>
-			
+			As Assistant Detachment Commander—and often Acting Commander—I led six Marines without an on-site supervisor, coordinating directly with embassy leadership to keep diplomats and classified materials secure. That required quick, informed decisions and clear communication across ranks and cultures.
 		</p>
+		<p>
+			Living and working in Liberia, Taiwan, and the Czech Republic reshaped how I lead: I adapt quickly to new systems, communicate clearly across cultures, and stay effective when the environment is unfamiliar or high-pressure.
+		</p>
+		<ul class="about-list">
+			<li><strong>Leadership:</strong> Directed a six-person team in high-stakes environments, coordinating with embassy leadership and driving project decisions.</li>
+			<li><strong>Operations:</strong> Managed security operations across three international posts with zero incidents, ensuring disciplined execution and reliable delivery.</li>
+			<li><strong>Problem-Solving:</strong> Adapted quickly to new protocols and cultures, resolving challenges efficiently and learning complex systems rapidly.</li>
+			<li><strong>Results-Driven:</strong> Optimized processes under pressure to protect personnel and information, focusing on scalable, maintainable solutions.</li>
+		</ul>
 	</div>
 </section>
 <section class="photo-gallery scroll-reveal">
-	<h3>Photo Gallery</h3>
-	<p>A glimpse of my journey.</p>
-	<div class="imagecarousel">
-	<img src="/assets/images/1.jpg" alt="Prague, Czechia" draggable="false"/>
-	<img src="/assets/images/2.jpg" alt="Tokyo, Japan" draggable="false"/>
-	<img src="/assets/images/3.jpg" alt="Tokyo, Japan" draggable="false"/>
-	<img src="/assets/images/4.jpg" alt="Seoul, South Korea" draggable="false"/>
-	<img src="/assets/images/5.jpg" alt="Photo of me in Seoul, South Korea" draggable="false"/>
-	<img src="/assets/images/6.jpg" alt="Prague, Czechia" draggable="false"/>
-	<img src="/assets/images/7.jpg" alt="Kenting, Taiwan" draggable="false"/>
-	<img src="/assets/images/8.jpg" alt="Bali, Indonesia" draggable="false"/>
-	<img src="/assets/images/9.jpg" alt="Indonesia" draggable="false"/>
-	<img src="/assets/images/10.jpg" alt="Prague, Czechia" draggable="false"/>
-	<img src="/assets/images/11.jpg" alt="Tokyo, Japan" draggable="false"/>
-	<img src="/assets/images/12.jpg" alt="Saigon, Vietnam" draggable="false"/>
+	<h3 class="gallery-title">Beyond the Resume</h3>
+	<div class="gallery-container">
+		<div class="gallery-track">
+			<button class="arrow left" aria-label="Previous image">&#10094;</button>
+			<div class="slide active">
+				<img src="/assets/images/6.jpg" alt="Professional headshot">
+				<p>Professional headshot</p>
+			</div>
+			<div class="slide">
+				<img src="/assets/images/6.jpg" alt="Marine service overseas">
+				<p>Marine service overseas</p>
+			</div>
+			<div class="slide">
+				<img src="/assets/images/6.jpg" alt="Global experience">
+				<p>Global experience & adaptability</p>
+			</div>
+			<button class="arrow right" aria-label="Next image">&#10095;</button>
+		</div>
 	</div>
 </section>
 <section class="cta-section scroll-reveal">
@@ -54,4 +58,22 @@ permalink: /about/
 		<a href="mailto:callejasoc1@gmail.com" class="btn btn-secondary">Get in Touch</a>
 	</div>
 </section>
-<script src="/assets/js/carousel.js"></script>
+<script>
+  const slides = document.querySelectorAll('.slide');
+  const prevBtn = document.querySelector('.arrow.left');
+  const nextBtn = document.querySelector('.arrow.right');
+  let currentIndex = 0;
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === index);
+    });
+  }
+  prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    showSlide(currentIndex);
+  });
+  nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % slides.length;
+    showSlide(currentIndex);
+  });
+</script>
