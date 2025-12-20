@@ -31,20 +31,20 @@ permalink: /about/
 <section class="photo-gallery scroll-reveal">
 	<h3>Photo Gallery</h3>
 	<p>A glimpse of my journey.</p>
-<div class="imagecarousel">
-  <img src="/assets/images/1.jpg" alt="Prague, Czechia" draggable="false"/>
-  <img src="/assets/images/2.jpg" alt="Tokyo, Japan" draggable="false"/>
-  <img src="/assets/images/3.jpg" alt="Tokyo, Japan" draggable="false"/>
-  <img src="/assets/images/4.jpg" alt="Seoul, South Korea" draggable="false"/>
-  <img src="/assets/images/5.jpg" alt="Photo of me in Seoul, South Korea" draggable="false"/>
-  <img src="/assets/images/6.jpg" alt="Prague, Czechia" draggable="false"/>
-  <img src="/assets/images/7.jpg" alt="Kenting, Taiwan" draggable="false"/>
-  <img src="/assets/images/8.jpg" alt="Bali, Indonesia" draggable="false"/>
-  <img src="/assets/images/9.jpg" alt="Indonesia" draggable="false"/>
-  <img src="/assets/images/10.jpg" alt="Prague, Czechia" draggable="false"/>
-  <img src="/assets/images/11.jpg" alt="Tokyo, Japan" draggable="false"/>
-  <img src="/assets/images/12.jpg" alt="Saigon, Vietnam" draggable="false"/>
-</div>
+	<div class="imagecarousel">
+	<img src="/assets/images/1.jpg" alt="Prague, Czechia" draggable="false"/>
+	<img src="/assets/images/2.jpg" alt="Tokyo, Japan" draggable="false"/>
+	<img src="/assets/images/3.jpg" alt="Tokyo, Japan" draggable="false"/>
+	<img src="/assets/images/4.jpg" alt="Seoul, South Korea" draggable="false"/>
+	<img src="/assets/images/5.jpg" alt="Photo of me in Seoul, South Korea" draggable="false"/>
+	<img src="/assets/images/6.jpg" alt="Prague, Czechia" draggable="false"/>
+	<img src="/assets/images/7.jpg" alt="Kenting, Taiwan" draggable="false"/>
+	<img src="/assets/images/8.jpg" alt="Bali, Indonesia" draggable="false"/>
+	<img src="/assets/images/9.jpg" alt="Indonesia" draggable="false"/>
+	<img src="/assets/images/10.jpg" alt="Prague, Czechia" draggable="false"/>
+	<img src="/assets/images/11.jpg" alt="Tokyo, Japan" draggable="false"/>
+	<img src="/assets/images/12.jpg" alt="Saigon, Vietnam" draggable="false"/>
+	</div>
 </section>
 <section class="cta-section scroll-reveal">
 	<h2>Let’s Connect</h2>
