@@ -35,15 +35,15 @@ permalink: /about/
 		<div class="gallery-track">
 			<button class="arrow left" aria-label="Previous image">&#10094;</button>
 			<div class="slide active">
-				<img src="/assets/images/6.jpg" alt="Professional headshot">
+				<img src="/assets/images/6.jpg" alt="Professional headshot" draggable="false">
 				<p>Professional headshot</p>
 			</div>
 			<div class="slide">
-				<img src="/assets/images/6.jpg" alt="Marine service overseas">
+				<img src="/assets/images/6.jpg" alt="Marine service overseas" draggable="false">
 				<p>Marine service overseas</p>
 			</div>
 			<div class="slide">
-				<img src="/assets/images/6.jpg" alt="Global experience">
+				<img src="/assets/images/6.jpg" alt="Global experience" draggable="false">
 				<p>Global experience & adaptability</p>
 			</div>
 			<button class="arrow right" aria-label="Next image">&#10095;</button>
