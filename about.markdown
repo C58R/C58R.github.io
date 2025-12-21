@@ -4,7 +4,7 @@ title: About Me
 permalink: /about/
 ---
 <section class="about-hero scroll-reveal">
-	<h2 class="About-title scroll-reveal">About Me</h2>
+	<h2 class="About-title">About Me</h2>
 	<p class="scroll-reveal">
 		Marine Security Guard who led detachments protecting U.S. diplomats and classified materials across Liberia, Taiwan, and the Czech Republic. I lean on trust, communication, and adaptability to keep teams aligned in high-stakes environments. That same problem-solving mindset now drives my transition into software engineering.
 	</p>

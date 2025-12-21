@@ -30,10 +30,17 @@ title: Oscar Callejas
       <div class="project-icon">
           <img src="/assets/images/construction.svg" alt="Project icon" draggable="false">
       </div>
-      <h3>Projects In Progress</h3>
-      <p>Currently developing projects that demonstrate my skills and passion.</p>
+            <div class="learn-more">
+        <a href="/projects#portfolio-site" class="view-project">Learn More &rarr;</a>
+      </div>
+      <h3>Portfolio Site</h3>
+      <p>This site: My personal portfolio, developed using HTML, SCSS, Jekyll, Liquid, and Markdown, and hosted on GitHub Pages, showcasing my software projects.</p>
       <div class="project-tech">
-        <span class="tech-tag">N/A</span>
+        <span class="tech-tag">Jekyll</span>
+        <span class="tech-tag">JavaScript</span>
+        <span class="tech-tag">HTML/CSS</span>
+        <span class="tech-tag">Liquid</span>
+        <span class="tech-tag">Git/GitHub</span>
       </div>
     </div>
     <!-- === Next project-card === 
