@@ -3,6 +3,7 @@ source "https://rubygems.org"
 # gem "jekyll", "~> 4.4.1"
 gem "github-pages", "~> 232", group: :jekyll_plugins
 gem "minima", "~> 2.5"
+gem "fiddle"
   # Supported layouts: default, home, about, 404, articles, framework, tags, archives, categories
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
