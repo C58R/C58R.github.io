@@ -4,6 +4,8 @@ source "https://rubygems.org"
 gem "github-pages", "~> 232", group: :jekyll_plugins
 gem "minima", "~> 2.5"
 gem "fiddle"
+gem "faraday-retry"
+gem "public_suffix", "~> 5.1.1"
   # Supported layouts: default, home, about, 404, articles, framework, tags, archives, categories
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and

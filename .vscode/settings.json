@@ -1,7 +1,0 @@
-/* .vscode/settings.json */
-
-/* Disable built-in CSS and SCSS validation to avoid conflicts with Jekyll's SCSS processing */
-{
-  "css.validate": false,
-  "scss.validate": false
-}
