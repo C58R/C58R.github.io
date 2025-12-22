@@ -218,6 +218,13 @@ a {
     margin-bottom: 2.5rem;
     color: $color-text;
   }
+
+  p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: lighten($color-text, 15%);
+  }
 }
 
 .projects-grid {
@@ -338,6 +345,18 @@ a {
   text-align: center;
   max-width: 900px;
   margin: 2rem auto 3rem;
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: $color-text;
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: lighten($color-text, 15%);
+  }
 }
 
 /* Tools and Technologies */
@@ -580,7 +599,6 @@ a {
 .about-hero {
   max-width: 900px;
   margin: 2rem auto 3rem;
-  text-align: justify;
 
   h2 {
     font-size: 2.5rem;
@@ -620,12 +638,26 @@ a {
 
 .about-content h3 {
   margin-top: 0;
+  font-size: 1.8rem;
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: lighten($color-text, 15%);
+    margin-bottom: 1.5rem;
+  }
 }
 
 .about-list {
   list-style: none;
   padding: 0;
   margin: 0 0 1.5rem;
+
+  li {
+    font-size: 1rem;
+    color: lighten($color-text, 15%);
+    margin-bottom: 0.5rem;
+  }
 }
 
 .about-list li {
