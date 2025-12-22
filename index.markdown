@@ -7,7 +7,6 @@ title: Oscar Callejas
   <h2>What I do</h2>
   <p>I'm a U.S. Marine veteran and computer science student pursuing a career in software engineering. I'm developing the skills to build software that makes a difference.</p>
 </section>
-
 <section class="featured-projects scroll-reveal">
   <h2>Featured Projects</h2>
   <div class="projects-grid">
@@ -43,19 +42,6 @@ title: Oscar Callejas
         <span class="tech-tag">Git/GitHub</span>
       </div>
     </div>
-    <!-- === Next project-card === 
-    <div class="project-card">
-      <div class="project-icon">
-        <img src="/assets/images/icon.svg" alt="Project icon" draggable="false">
-      </div>
-      <h3>Project Card 2</h3>
-      <p>Currently developing projects that demonstrate my skills and passion.</p>
-      <div class="project-tech">
-        <span class="tech-tag">Coding Language</span>
-        <span class="tech-tag">Coding Language2</span>
-      </div>
-    </div>
-    -->
   </div>
 </section>
 <section class="skills-section scroll-reveal">
@@ -93,7 +79,7 @@ title: Oscar Callejas
 </section>
 <section class="cta-section scroll-reveal">
   <h2>Let's Connect</h2>
-  <p>Interested in working together or want to learn more?</p>
+  <p>Interested in reaching out?</p>
   <div class="cta-buttons">
     <a href="/about" class="btn btn-primary">About Me</a>
     <a href="mailto:callejasoc1@gmail.com" class="btn btn-secondary">Get in Touch</a>

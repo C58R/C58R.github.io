@@ -24,7 +24,7 @@ permalink: /projects/
         <a class="btn btn-primary" href="https://www.tinkercad.com/things/1P5Pn4yajob-medibot-arduino?sharecode=xIqsPo0BIjVIHGg9UakHdFdWppOwGCOqgHdqAugQ64Q" target="_blank" rel="noopener noreferrer">View on TinkerCAD</a>
       </div>
     </div>
-    <div class="project-card">
+    <div class="project-card" id="portfolio-site">
       <img class="project-thumb" src="/assets/images/portfolio.png" alt="Portfolio site screenshot" draggable="false">
       <div class="learn-more"></div>
       <h3>Portfolio Site</h3>
