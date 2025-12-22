@@ -12,7 +12,7 @@ title: Oscar Callejas
   <div class="projects-grid">
     <div class="project-card">
       <div class="project-icon">
-        <img src="/assets/images/arduino.svg" alt="Project icon" draggable="false">
+        <img src="/assets/images/arduino-icon.svg" alt="Project icon" draggable="false">
       </div>
       <div class="learn-more">
         <a href="/projects#medibot" class="view-project">Learn More &rarr;</a>
@@ -27,7 +27,7 @@ title: Oscar Callejas
     </div>
     <div class="project-card">
       <div class="project-icon">
-          <img src="/assets/images/construction.svg" alt="Project icon" draggable="false">
+          <img src="/assets/images/website-icon.svg" alt="Project icon" draggable="false">
       </div>
             <div class="learn-more">
         <a href="/projects#portfolio-site" class="view-project">Learn More &rarr;</a>
