@@ -69,8 +69,8 @@
     width: 100%;
     flex-direction: column;
     gap: 0;
-    padding: 1rem 2rem;
-    background: rgba(250, 250, 250, 0.9);
+    padding: $spacing-sm $spacing-lg;
+    background: $color-bg;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-top: 1px solid rgba(0, 0, 0, 0.05);
@@ -106,7 +106,7 @@
   }
 
   .nav-menu.mobile-open a {
-    animation: linkFadeIn 0.3s ease forwards;
+    animation: linkFadeIn 0.2s ease forwards;
   }
 
   .nav-menu.mobile-open a:nth-child(1) {

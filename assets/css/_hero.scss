@@ -43,7 +43,7 @@
 /* Hero text content */
 .hero-content {
   position: relative;
-  z-index: 100;
+  z-index: $z-hero;
   text-align: center;
   color: white;
 }
@@ -58,8 +58,8 @@
 
 .hero-quote {
   font-size: 1.5rem;
-  margin-top: 2rem;
-  padding: 0 2rem;
+  margin-top: $spacing-lg;
+  padding: 0 $spacing-lg;
   font-style: italic;
   text-shadow: $shadow-text-strong;
   animation: fadeInUp 2s ease-out;
@@ -67,8 +67,8 @@
 
 .hero-quote-author {
   font-size: 1.2rem;
-  margin-top: 0.5rem;
-  padding: 0 2rem;
+  margin-top: $spacing-sm;
+  padding: 0 $spacing-lg;
   font-style: normal;
   font-weight: 300;
   opacity: 0.9;
@@ -79,9 +79,9 @@
 /* Hero Image Caption */
 .hero-caption-section {
   position: absolute;
-  bottom: 2rem;
-  right: 2rem;
-  z-index: 100;
+  bottom: $spacing-lg;
+  right: $spacing-lg;
+  z-index: $z-hero;
   text-align: right;
   color: white;
 }
@@ -189,7 +189,7 @@
   }
   .hero-quote {
     font-size: 0.75rem;
-    margin-top: 0.5rem;
+    margin-top: $spacing-xs;
   }
   .hero-quote-author {
     font-size: 0.7rem;

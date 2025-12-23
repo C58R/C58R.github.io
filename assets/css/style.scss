@@ -57,7 +57,7 @@ a {
   width: 100%;
   z-index: $z-header;
   box-shadow: none;
-  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+  transition: background-color $transition-base, border-color $transition-base, box-shadow $transition-base, color $transition-base, text-shadow $transition-base;
   color: white;
   text-shadow: $shadow-text;
 }
@@ -118,7 +118,7 @@ a {
   min-height: 100vh;
   width: 100%;
   margin: 0;
-  padding: 3rem 2rem;
+  padding: 3rem $spacing-xl;
   background-color: $color-bg;
   position: relative;
   z-index: $z-content;
@@ -155,7 +155,7 @@ a {
   font-size: 0.9rem;
 
   p {
-    margin: 0.5rem 0;
+    margin: $spacing-xs 0;
   }
 
   a {
@@ -172,7 +172,7 @@ a {
 
   a {
     color: $color-text;
-    transition: transform 0.2s ease, color 0.2s ease;
+    transition: transform $transition-short, color $transition-short;
     display: inline-block;
     
     svg {
@@ -190,13 +190,13 @@ a {
 
 /* Home Page */
 .intro-section {
-  max-width: 800px;
+  max-width: $max-width-content;
   margin: 0 auto 4rem;
   text-align: center;
 
   h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
+    font-size: $spacing-lg;
+    margin-bottom: $spacing-md;
     color: $color-text;
   }
 
@@ -209,20 +209,20 @@ a {
 
 /* Featured Projects */
 .featured-projects {
-  max-width: 1200px;
+  max-width: $max-width-lg;
   margin: 0 auto 4rem;
 
   h2 {
     text-align: center;
     font-size: 2rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: $spacing-xl;
     color: $color-text;
   }
 
   p {
     text-align: center;
     font-size: 1.1rem;
-    margin-bottom: 2rem;
+    margin-bottom: $spacing-lg;
     color: lighten($color-text, 15%);
   }
 }
@@ -230,14 +230,14 @@ a {
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  gap: $spacing-lg;
 }
 
 .project-card {
   background: white;
   border: 1px solid $color-border;
   border-radius: 8px;
-  padding: 2rem;
+  padding: $spacing-lg;
   transition: $transition-all;
   position: relative;
 
@@ -251,13 +251,13 @@ a {
     max-height: 200px;
     object-fit: cover;
     border-radius: 8px;
-    margin-bottom: 1rem;
+    margin-bottom: $spacing-md;
     border: 1px solid rgba(0,0,0,0.05);
   }
 
   .project-icon {
     font-size: 3rem;
-    margin-bottom: 1rem;
+    margin-bottom: $spacing-lg;
     
     img {
       width: 3rem;
@@ -268,8 +268,8 @@ a {
 
   .learn-more {
     position: absolute;
-    top: 1.5rem;
-    right: 1.5rem;
+    top: $spacing-md;
+    right: $spacing-md;
     font-size: 0.9rem;
     
     a {
@@ -291,7 +291,7 @@ a {
 
   p {
     color: lighten($color-text, 20%);
-    margin-bottom: 1.5rem;
+    margin-bottom: $spacing-md;
     line-height: 1.6;
   }
 }
@@ -311,7 +311,7 @@ a {
 .project-tech {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: $spacing-xs;
 }
 
 .tech-tag {
@@ -321,7 +321,7 @@ a {
   border-radius: 4px;
   font-size: 0.85rem;
   font-weight: 500;
-  transition: transform 0.2s ease, background-color 0.2s ease;
+  transition: transform $transition-short, background-color $transition-short;
 }
 
 .project-card:hover .tech-tag {
@@ -330,21 +330,21 @@ a {
 }
 
 .skills-section {
-  max-width: 1200px;
+  max-width: $max-width-lg;
   margin: 0 auto 4rem;
 
   h2 {
     text-align: center;
     font-size: 2rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: $spacing-xl;
     color: $color-text;
   }
 }
 
 .projects-hero {
   text-align: center;
-  max-width: 900px;
-  margin: 2rem auto 3rem;
+  max-width: $max-width-content;
+  margin: $spacing-lg auto 3rem;
 
   h2 {
     font-size: 2.5rem;
@@ -363,9 +363,9 @@ a {
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  gap: $spacing-lg;
 
-  @media (min-width: 768px) {
+  @media (min-width: $breakpoint-md) {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -374,7 +374,7 @@ a {
   background: white;
   border: 1px solid $color-border;
   border-radius: 8px;
-  padding: 2rem;
+  padding: $spacing-lg;
 
   &:hover {
     box-shadow: $shadow-sm;
@@ -384,7 +384,7 @@ a {
 
   h3 {
     font-size: 1.25rem;
-    margin: 0 0 1rem 0;
+    margin: 0 0 $spacing-sm 0;
     color: $color-accent;
   }
 
@@ -408,10 +408,10 @@ a {
 
 /* Call to Action */
 .cta-section {
-  max-width: 800px;
+  max-width: $max-width-cta;
   margin: 0 auto 4rem;
   text-align: center;
-  padding: 3rem 2rem;
+  padding: 3rem $spacing-lg;
   background: linear-gradient(135deg, lighten($color-accent, 45%), lighten($color-accent, 40%));
   border: 1px solid $color-border;
   border-radius: 12px;
@@ -421,27 +421,27 @@ a {
 
   h2 {
     font-size: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: $spacing-sm;
     color: $color-text;
   }
 
   p {
     font-size: 1.1rem;
-    margin-bottom: 2rem;
+    margin-bottom: $spacing-lg;
     color: lighten($color-text, 15%);
   }
 }
 
 .cta-buttons {
   display: flex;
-  gap: 1rem;
+  gap: $spacing-sm;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 .btn {
   display: inline-block;
-  padding: 0.75rem 2rem;
+  padding: 0.75rem $spacing-lg;
   border-radius: 6px;
   text-decoration: none;
   font-weight: 600;
@@ -473,7 +473,7 @@ a {
 }
 
 /* Screen Sizes */
-@media (max-width: 1200px) {
+@media (max-width: $breakpoint-xl) {
   .nav-menu {
     gap: 1.5rem;
     
@@ -482,80 +482,80 @@ a {
     }
   }
   .main-content {
-    padding: 2.5rem 2rem;
+    padding: $spacing-xl $spacing-lg;
   }
   .name {
     font-size: 1.4rem;
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: $breakpoint-lg) {
   .nav-menu {
-    gap: 1.2rem;
+    gap: $spacing-xxs;
     
     a {
       font-size: 1.1rem;
     }
   }
   .main-content {
-    padding: 2.5rem 1.8rem;
+    padding: $spacing-xl 1.8rem;
   }
   .name {
     font-size: 1.3rem;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $breakpoint-md) {
   .nav-menu {
-    gap: 1rem;
+    gap: $spacing-sm;
     
     a {
       font-size: 1rem;
     }
   }
   .main-content {
-    padding: 2rem 1.5rem;
+    padding: $spacing-lg $spacing-xl;
   }
   .name {
     font-size: 1.25rem;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: $breakpoint-sm) {
   .nav-menu {
-    gap: 0.5rem;
+    gap: $spacing-xs;
     
     a {
       font-size: 0.9rem;
     }
   }
   .main-content {
-    padding: 1.5rem 1rem;
+    padding: $spacing-md $spacing-sm;
   }
   .name {
-    font-size: 1.1rem;
+    font-size: $font-size-lg;
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: $breakpoint-xs) {
   .nav-menu {
-    gap: 0.5rem;
+    gap: $spacing-xs;
     
     a {
       font-size: 0.9rem;
     }
   }
   .main-content {
-    padding: 1rem 1rem;
+    padding: $spacing-sm $spacing-sm;
   }
   .name {
     font-size: 0.9rem;
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: $breakpoint-xxs) {
   .nav-menu {
-    gap: 0.2rem;
+    gap: $spacing-xxs;
     
     a {
       font-size: 0.65rem;
@@ -573,7 +573,7 @@ a {
 .scroll-reveal {
   opacity: 0;
   transform: translateY(40px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  transition: opacity $transition-long, transform $transition-long;
   will-change: transform, opacity;
 }
 
@@ -597,12 +597,12 @@ a {
 
 /* About Page */
 .about-hero {
-  max-width: 900px;
-  margin: 2rem auto 3rem;
+  max-width: $max-width-content;
+  margin: $spacing-lg auto 3rem;
 
   h2 {
     font-size: 2.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: $spacing-md;
     color: $color-text;
     text-align: center;
   }
@@ -617,9 +617,9 @@ a {
 .about-grid {
   display: grid;
   grid-template-columns: 280px 1fr;
-  gap: 2rem;
+  gap: $spacing-lg;
   align-items: start;
-  max-width: 1000px;
+  max-width: $max-width-content;
   margin: 0 auto 4rem;
 }
 
@@ -644,19 +644,19 @@ a {
     font-size: 1.1rem;
     line-height: 1.8;
     color: lighten($color-text, 15%);
-    margin-bottom: 1.5rem;
+    margin-bottom: $spacing-md;
   }
 }
 
 .about-list {
   list-style: none;
   padding: 0;
-  margin: 0 0 1.5rem;
+  margin: 0 0 $spacing-md;
 
   li {
     font-size: 1rem;
     color: lighten($color-text, 15%);
-    margin-bottom: 0.5rem;
+    margin-bottom: $spacing-xs;
   }
 }
 
@@ -666,12 +666,12 @@ a {
 }
 
 .photo-gallery {
-  max-width: 1000px;
+  max-width: $max-width-content;
   margin: 0 auto 4rem;
   overflow: hidden;
 }
 
-@media (max-width: 767px) {
+@media (max-width: $breakpoint-md) {
   .about-grid {
     grid-template-columns: 1fr;
   }

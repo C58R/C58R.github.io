@@ -8,10 +8,15 @@ $color-accent-hover: darken($color-accent, 10%);
 
 /* Typography */
 $font-family-base: 'Montserrat', sans-serif;
-$font-size-base: 16px;
+$font-size-xl: 24px; // rem equivalent: 1.5rem
+$font-size-lg: 18px; // rem equivalent: 1.125rem
+$font-size-base: 16px; // rem equivalent: 1rem
+$font-size-sm: 14px; // rem equivalent: 0.875rem
+$font-size-xs: 12px; // rem equivalent: 0.75rem
 $line-height-base: 1.6;
 
 /* Spacing */
+$spacing-xxs: 0.25rem;
 $spacing-xs: 0.5rem;
 $spacing-sm: 1rem;
 $spacing-md: 1.5rem;
@@ -19,6 +24,7 @@ $spacing-lg: 2rem;
 $spacing-xl: 2.5rem;
 
 /* Z-Index */
+$z-arrow: 10;
 $z-header: 200;
 $z-content: 50;
 $z-hero: 100;
@@ -28,7 +34,8 @@ $transition-base: color 0.3s ease;
 $transition-all: all 0.3s ease;
 $transition-short: 0.25s ease;
 $transition-medium: 0.3s ease;
-$transition-hamburger-menu: opacity 0.2s ease-out, transform 0.2s ease-out, max-height 0.3s ease-out;
+$transition-long: 0.6s ease;
+$transition-hamburger-menu: opacity 0.1s ease-out, transform 0.1s ease-out, max-height 0.3s ease-out;
 
 /* Scroll Reveal */
 $scroll-reveal-delay-1: 0.2s;
@@ -47,3 +54,8 @@ $breakpoint-md: 768px;
 $breakpoint-sm: 480px;
 $breakpoint-xs: 360px;
 $breakpoint-xxs: 320px;
+
+/* Widths */
+$max-width-content: 1000px;
+$max-width-lg: 1200px;
+$max-width-cta: 800px;

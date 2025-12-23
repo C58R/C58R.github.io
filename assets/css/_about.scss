@@ -1,6 +1,5 @@
 @import "variables";
 
-/* ===== Photo Gallery ===== */
 .photo-gallery {
   margin-top: 5rem;
   text-align: center;
@@ -8,7 +7,7 @@
 
 .photo-gallery h2 {
   font-size: 1.8rem;
-  margin-bottom: 2rem;
+  margin-bottom: $spacing-lg;
   font-weight: 500;
 }
 
@@ -24,13 +23,12 @@
   overflow: hidden;
 }
 
-/* Slides */
 .slide {
   position: absolute;
   inset: 0;
   opacity: 0;
   transform: translateX(40px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  transition: opacity $transition-long, transform $transition-long;
 }
 
 .slide.active {
@@ -67,10 +65,10 @@
   line-height: 1;
   color: darken($color-text, 10%);
   border: none;
-  z-index: 10;
+  z-index: $z-arrow;
   cursor: pointer;
   box-shadow: $shadow-sm;
-  transition: $transition-short, box-shadow 0.2s ease, transform 0.2s ease;
+  transition: $transition-short, box-shadow $transition-short, transform $transition-short;
 }
 
 .arrow.left {
