@@ -7,3 +7,8 @@ Gemfile.lock
 .vscode
 .DS_Store
 Thumbs.db
+.claude
+CNAME
+TODO.md
+.gitignore
+_config.yml
