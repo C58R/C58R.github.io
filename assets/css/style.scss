@@ -146,6 +146,15 @@ a {
 }
 
 /* Footer */
+.footer-email {
+  color: $color-accent;
+  font-size: 0.95rem;
+
+  &:hover {
+    color: $color-accent-hover;
+  }
+}
+
 .site-footer {
   background-color: $color-light;
   border-top: 1px solid $color-border;

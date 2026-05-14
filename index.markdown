@@ -82,6 +82,6 @@ title: Oscar Callejas
   <p>Interested in reaching out?</p>
   <div class="cta-buttons">
     <a href="/about" class="btn btn-primary">About Me</a>
-    <a href="mailto:callejasoc1@gmail.com" class="btn btn-secondary">Get in Touch</a>
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=callejasoc1@gmail.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">callejasoc1@gmail.com</a>
   </div>
 </section>

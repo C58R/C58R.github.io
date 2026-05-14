@@ -55,7 +55,7 @@ permalink: /about/
 	<p>Want to collaborate or learn more?</p>
 	<div class="cta-buttons">
 		<a href="/projects" class="btn btn-primary">View Projects</a>
-		<a href="mailto:callejasoc1@gmail.com" class="btn btn-secondary">Get in Touch</a>
+		<a href="https://mail.google.com/mail/?view=cm&fs=1&to=callejasoc1@gmail.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">callejasoc1@gmail.com</a>
 	</div>
 </section>
 <script>
